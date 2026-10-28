@@ -10,7 +10,8 @@ print("Salam, data mühəndisliyi!")
 print("Baza stansiyası:", "BAK-0207")
 print(2+3)
 print("2+3")
-print("=== Kərpic 2 ===")   # Dəyişən — adı olan qutu
+
+ 2 ===")   # Dəyişən — adı olan qutu
 # TODO: cell, rsrp, drops
 
 print("=== Kərpic 3 ===")   # Tiplər: int, float, str, bool, None
@@ -24,10 +25,25 @@ print("=== Kərpic 5 ===")   # Siyahı (list)
 
 print("=== Kərpic 6 ===")   # Lüğət (dict)
 # TODO: row = {...}, row["region"]
+row = {"cell_id": "BAK-0207", "region": "Yasamal", "rsrp_dbm": -108.1}
+row["region"] = "Nizami"
+print(row)
 
+keyy=input()
+valuee= input()
+if keyy in row:
+    row[keyy]=valuee
+    print(row)
+else:
+    row[keyy] = valuee
+    print(row)
 print("=== Kərpic 7 ===")   # Dövr (for) və şərt (if / else)
 # TODO: zəif ölçmələri saymaq
-
+rsrp_list = [-91.5, -108.1, -86.2, -103.3, -110.4]
+for i in rsrp_list:
+    num=int(input())
+    print(i*num)
+  
 print("=== Kərpic 8 ===")   # Funksiya: çağırmaq və yaratmaq
 # TODO: round, len, max; def is_weak(rsrp)
 
