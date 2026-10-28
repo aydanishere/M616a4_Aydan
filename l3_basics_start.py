@@ -43,7 +43,25 @@ rsrp_list = [-91.5, -108.1, -86.2, -103.3, -110.4]
 for i in rsrp_list:
     num=int(input())
     print(i*num)
-  
+
+weak = 0 
+for v in rsrp_list: 
+    if v < -105:
+        print(v, "→ zəif") 
+        weak = weak + 1
+    else:
+        print(v, "→ normal")
+print("Zəif ölçmə sayı:", weak)
+
+m=int(input())
+if m>=91 and m<=100:
+    print('A aldiniz')
+elif m>=71 and m<=90:
+     print('B aldiniz')
+elif m>=51 and m<=70:
+    print('C aldiniz')
+else:
+    print('Kesildiniz')
 print("=== Kərpic 8 ===")   # Funksiya: çağırmaq və yaratmaq
 # TODO: round, len, max; def is_weak(rsrp)
 
